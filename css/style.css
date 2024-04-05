@@ -1,0 +1,387 @@
+/* Reset CSS untuk menetapkan margin, padding, dan box-sizing ke nilai default */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Styling untuk body */
+body {
+	width: 100%; 
+	height: 100vh; 
+	display: grid; 
+	align-items: center; 
+	background: #b1aeb4; 
+	font-family: 'Poppins', sans-serif; 
+}
+
+/* Styling untuk navbar */
+.navbar {
+	background-color: #333; 
+	color: #fff; 
+	padding: 20px 0; 
+	text-align: center; 
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-item {
+	margin-left: 10px; 
+}
+
+.nav-link.btn {
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 8px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #007bff; /* Warna biru sesuai dengan kelas btn-primary di Bootstrap */
+	transition: background-color 0.3s ease;
+}
+
+.nav-link.btn:hover {
+	background-color: #0056b3; /* Warna biru yang sedikit lebih gelap */
+}
+
+.nav-link.btn:active {
+	transform: translateY(1px);
+}
+
+.subtitle {
+	padding-right: 50px;
+}
+
+.about-img {
+	background-color: #9da9ae;
+	border-radius: 15px;
+	padding: 10px;
+}
+/* Styling untuk navbar */
+
+/* Styling untuk home section */
+#home {
+	width: 85%;
+	margin: auto;
+	padding: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+	background-color: #cee7ec;
+	box-shadow: 0px 0px 10px 0px #666;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#title {
+	padding-top: 70px;
+}
+
+#home img {
+	height: 400px;
+	background-color:rgba(207, 51, 194, 0.5);
+	border-radius: 15px;
+	padding: 10px;
+}
+
+/* Styling untuk tentang kami */
+#tentang-kami {
+	justify-content: center;
+	width: 85%;
+	margin: auto;
+	padding: 30px;
+	border-radius: 10px;
+	background-color: #eef4f7;
+	box-shadow: 0px 0px 10px 0px #666;
+	margin-bottom: 30px;
+}
+
+/* Styling untuk tentang kami */
+
+/* CSS untuk Layanan Kami */
+#layanankami {
+	width: 85%;
+	margin: auto;
+	padding: 20px;
+	padding-bottom: 50px;
+	border-radius: 10px;
+	background-color: #3d6170;
+	box-shadow: 0px 0px 10px 0px #666;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#layanankami h2 {
+	color: white;
+}
+
+.card {
+	line-height: 1;
+	transition: all 0.3s;
+}
+
+.card:hover, 
+.card:active {
+	transform: scale(1.1);
+	border: 1px solid #daed0e;
+}
+
+.card__title,
+.card__price {
+	font-weight: bold;
+}
+
+.card__title {
+	font-size: 1.1rem;
+}
+
+.card__text {
+	display: inline-block;
+	padding: 0.5em;
+	font-weight: 400;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: #333;
+	background-color: #f1f2e5;
+}
+
+.card__btn {
+	width: 100%;
+	text-align: center;
+	padding: 0.5em;
+	border-radius: 5px;
+	background-color: #0fb948;
+	border: 1px solid #0d0d0d;
+	color: #fff;
+}
+
+.card__btn:hover, 
+.card__btn:focus, 
+.card__btn:active {
+	transform: translatey(2px);
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+	background-color: #f70505;
+}
+
+.card__btn:active {
+	border: 3px solid #9e1610 inset;
+}
+/* CSS untuk Layanan Kami */
+
+/* CSS untuk testimoni */
+/* mendefinisikan gaya untuk container utama testimoni. */
+.testimonials-clean {
+    color: #313437; /* Warna teks */
+    background-color: #eef4f7; /* Warna latar belakang */
+    width: 85%; /* Lebar */
+    margin: auto; /* Posisi tengah */
+    padding: 20px; /* Padding */
+    border-radius: 10px; /* Border radius */
+    box-shadow: 0px 0px 10px 0px #666; /* Efek bayangan */
+    margin-bottom: 50px; /* Margin bawah */
+}
+
+/* Warna teks untuk paragraf, judul, dan deskripsi */
+.testimonials-clean p,
+.testimonials-clean .title,
+.testimonials-clean .description {
+    color: #7d8285;
+}
+
+/* Judul testimoni */
+.testimonials-clean h2 {
+    font-weight: bold; 
+    margin-bottom: 40px; 
+    padding-top: 40px; 
+    color: inherit; 
+}
+
+/* Penyesuaian untuk tampilan perangkat seluler */
+@media (max-width: 767px) {
+    .testimonials-clean h2 {
+        margin-bottom: 25px; 
+        padding-top: 25px;
+        font-size: 24px; 
+    }
+}
+
+/* Pengaturan untuk intro */
+.testimonials-clean .intro {
+    font-size: 16px; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.testimonials-clean .intro p {
+    margin-bottom: 0; 
+}
+
+/* Bagian testimoni */
+.testimonials-clean .people {
+    padding: 50px 0 20px; 
+}
+
+.testimonials-clean .item {
+    margin-bottom: 32px; 
+}
+
+/* Penyesuaian untuk tampilan desktop */
+@media (min-width: 768px) {
+    .testimonials-clean .item {
+        height: 220px; 
+    }
+}
+
+.testimonials-clean .item .box {
+    padding: 30px; 
+    background-color: #fff; 
+    position: relative; 
+}
+
+/* Efek atas kotak testimoni */
+.testimonials-clean .item .box:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: -24px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-width: 12px 15px;
+    border-top-color: #fff;
+}
+
+/* Penulis testimoni */
+.testimonials-clean .item .author {
+    margin-top: 28px; 
+    padding-left: 25px; 
+}
+
+.testimonials-clean .item .name {
+    font-weight: bold; 
+    margin-bottom: 2px; 
+    color: inherit; 
+}
+
+.testimonials-clean .item .description {
+    font-size: 15px; 
+    margin-bottom: 0; 
+}
+
+.testimonials-clean .item img {
+    max-width: 40px; 
+    float: left; 
+    margin-right: 12px; 
+    margin-top: -5px; 
+}
+/* CSS untuk testimoni */
+
+/* CSS untuk thubungi kami */
+/* card bacround*/
+.contact-in {
+	width: 85%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fffbfb;
+	box-shadow: 0px 0px 10px 0px #666;
+	margin-bottom: 50px; /* Menambahkan margin bawah agar terlihat lebih terpisah dari testimoni */
+}
+
+/* button submit*/
+.contact-form-btn {
+	width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+	border-radius: 50px;
+    border: none;
+    cursor: pointer;
+	font-size: 18px;
+    border-radius: 50px;
+	text-transform: uppercase;
+}
+
+.contact-map {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+
+.contact-map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-form {
+	width: 100%;
+	height: auto;
+	flex: 50%;
+	padding: 30px;
+	text-align: center;
+}
+
+.contact-form h1 {
+	margin-bottom: 10px;
+}
+
+.contact-form-txt {
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 50px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+
+.contact-form-txt::placeholder {
+	color: #777373;
+}
+
+.contact-form-textarea {
+	width: 100%;
+	height: 130px;
+	color: #111111;
+	border: 1px solid #bcbcbc;
+	border-radius: 10px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-textarea::placeholder {
+	color: #c2bebe;
+}
+/* CSS untuk hubungi kami */
+
+
+/* CSS untuk icon WhatsApp */
+.whatsapp-icon {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	background-color: #25d366;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon:hover {
+	background-color: #128c7e;
+}
+/* CSS untuk icon WhatsApp */
